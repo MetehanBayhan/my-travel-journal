@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+
+.header {
+  background-color: #F55A5A;
+
+}
+
+.container {
+  max-width: 550px;
+  margin: auto;
+}
+
+/* TYPOGRAPHY */
+
+.header--title {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.card--content * {
+  font-size: 0.625rem;
+}
+
+.card--location {
+  letter-spacing: 2px;
+  margin-right: 1.5em;
+}
+
+.card--location-link {
+  color: #918E9B;
+}
+
+.card--location-title {
+  font-size: 1.5rem;
+}
+
+.card--location-date{
+  font-weight: bold;
+}
+
+/* header */
+
+.header--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: #F55A5A;
+  color: white; 
+  margin-bottom: 2rem;
+}
+
+.header--icon {
+  font-size: 1.5rem;
+  margin-right: .2em;
+}
+
+/* card */
+
+.card--content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 1em 1em;
+}
+
+@media screen and (max-width: 400px) {
+  .card--content {
+    flex-direction: column;
+  }
+}
+
+.card--img {
+  object-fit: cover;
+  max-width: 125px;
+  aspect-ratio: .75;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .card--img {
+    max-width: 100%;
+  }
+}
+
+.card--location-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card--location-icon {
+  color: #F55A5A;
+  font-size: .8rem;
+}
